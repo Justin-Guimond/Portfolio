@@ -8,10 +8,10 @@ const $a = $('a').hover(function (){
 });
 
 $('.open').click(function(){
-    $('.popupOverlay, .popupContent').addClass('active');
+    $('.popupOverlay').addClass('active');
 });
 $('.close, .popupOverlay').click(function(){
-    $('.popupOverlay, .popupContent').removeClass('active');
+    $('.popupOverlay').removeClass('active');
 })
 
 
