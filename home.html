@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio_Justin Guimond</title>
-    <link rel="stylesheet" href="main.css"/>
-    <script src="app.js" charset="utf-8"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio_Justin Guimond</title>
+        <link rel="stylesheet" href="main.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">  
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="home.html">Justin Guimond</a></li>
-                <li><a href="home.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul>
+                <li class="nav-right"><a href="home.html">Projects</a></li>
+                <li class="nav-right"><a href="about.html">About</a></li>
             </ul>
         </nav>
         <div>
         </div>
     </header>
-
+    
     <main>
         <div id="intro">
             <h1 id="hi">Hi there!</h1>
-            <h2 id="brand-statement">I am a creative and detail-oriented Full Stack Software Engineer always looking for ways to push the boundaries of what's possible. Say <a href="mailto:trustinjusting@gmail.com">hello</a>!</h2>
+            <h2 id="brandStatement">I am a creative and detail-oriented Full Stack Software Engineer always looking for ways to push the boundaries of what's possible. Say <a href="mailto:trustinjusting@gmail.com">hello</a>!</h2>
         </div>
         <h3><i>Recent Work</i></h3>
         <section>
-            <a href="GoogleProject.html">
-                <img src="https://images.pexels.com/photos/40185/mac-freelancer-macintosh-macbook-40185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
-            </a>   
+            <div id="imageContainer">
+                <a href="GoogleProject.html">
+                    <img src="https://images.pexels.com/photos/40185/mac-freelancer-macintosh-macbook-40185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                    <p>Google Project</p>
+                </a>
+            </div>   
             <a href="FacebookProject.html">
                 <img src="https://images.pexels.com/photos/267399/pexels-photo-267399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                <p>Facebook Project</p>
             </a>   
         </section>
     </main>
-
+    
     <footer>
         <h3>Contact</h3>
         <h4>Let’s set up an interview - I’d be happy to walk you through my projects and discuss new opportunities!</h4>
-        <a href="mailto:trustinjusting@gmail.com">TrustinJustinG@gmail.com</a><br>
-        <a href="https://www.linkedin.com/in/justinguimond/">LinkedIn</a> 
-        <a href="https://github.com/Justin-Guimond">GitHub</a>   
+        <a class="navLink" href="mailto:trustinjusting@gmail.com">TrustinJustinG@gmail.com</a><br>
+        <a class="navLink" href="https://www.linkedin.com/in/justinguimond/">LinkedIn</a><br> 
+        <a class="navLink" href="https://github.com/Justin-Guimond">GitHub</a>   
     </footer>
 </body>
 </html>

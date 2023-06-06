@@ -1,1 +1,44 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e0db;
+}
+body {
+}
+
+header {
+    padding: 20px;
+}
+
+main {
+
+}
+a {
+    color: #2E2E2E;
+    text-decoration: none; /*removes underlining of links*/
+}
+
+img {
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline; /*puts links beside eachother*/
+}
+
+footer {
+    color: white;
+    background-color: #2E2E2E;
+    padding: 10px 20px 20px;
+}
+
+.navLink {
+    color: white;
+}
 
