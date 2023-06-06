@@ -2,23 +2,65 @@ html {
     font-family: 'Roboto', sans-serif;
     background-color: #e0e0db;
 }
-body {
-    margin: 0;
-    padding: 50px
-}
-
-/* header {
-
-} */
-
-/* main {
-} */
 
 a {
     color: #2E2E2E;
     text-decoration: none; /*removes underlining of links*/
 }
 
+body {
+    padding: 0;
+    margin: 0px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0db;
+}
+
+main {
+    margin: 0 100px;
+    padding: 60px 0;
+}
+
+.intro {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#recentWork {
+    padding: 50px;
+    text-align: center;
+}
+
+section {
+    display: flex;
+}
+
+#leftDiv, #rightDiv {
+    width: 50%;
+}
+
+li {
+    display: inline; /*puts links beside eachother*/
+    float: right;
+    padding: 0 40px 0 0;
+}
+
+#home {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+#hi{
+    font-size: 20px;
+}
 
 #hello {
     color: blue;
@@ -30,30 +72,30 @@ img {
     border-radius: 10px;
 }
 
-ul {
-    display: grid;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline; /*puts links beside eachother*/
-}
-
 footer {
     color: white;
     background-color: #2E2E2E;
     /* padding: 10px 20px 20px; */
-    width: 100vw;
+    width: 100%;
 }
 
 .navLink {
     color: white;
 }
 
-a.btn {
+a.btn {     /* X button for modal */
     padding: 20px;
     color: white;
+}
+
+#hiker {
+    width: 40%;
+    height: 40%;
+}
+
+#imgContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .popupOverlay {
@@ -67,7 +109,7 @@ a.btn {
 
 .popupContent {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     left: 25%;
     visibility: hiddens;
 }
