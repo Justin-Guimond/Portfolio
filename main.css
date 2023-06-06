@@ -3,18 +3,25 @@ html {
     background-color: #e0e0db;
 }
 body {
+    margin: 0;
+    padding: 50px
 }
 
-header {
-    padding: 20px;
-}
+/* header {
 
-main {
+} */
 
-}
+/* main {
+} */
+
 a {
     color: #2E2E2E;
     text-decoration: none; /*removes underlining of links*/
+}
+
+
+#hello {
+    color: blue;
 }
 
 img {
@@ -24,6 +31,7 @@ img {
 }
 
 ul {
+    display: grid;
     margin: 0;
     padding: 0;
 }
@@ -35,10 +43,35 @@ li {
 footer {
     color: white;
     background-color: #2E2E2E;
-    padding: 10px 20px 20px;
+    /* padding: 10px 20px 20px; */
+    width: 100vw;
 }
 
 .navLink {
     color: white;
 }
 
+a.btn {
+    padding: 20px;
+    color: white;
+}
+
+.popupOverlay {
+    background-color: rgba(0,0,0, .8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.popupContent {
+    position: absolute;
+    width: 100vw;
+    left: 25%;
+    visibility: hiddens;
+}
+
+.popupOverlay.active, .popupContent.active {
+    visibility: visible;
+}
