@@ -163,8 +163,6 @@ a.btn {     /* X button for modal */
     height: 550px;
     max-width: 60%;
     max-height: 80%;
-    /* min-width: 50%;
-    min-height: 60%; */
 }
 
 #imgContainer {
@@ -173,7 +171,6 @@ a.btn {     /* X button for modal */
     max-height: 100%;
     margin-left: 60px;
     padding-top: 60px;
-
 }
 
 .popupOverlay {
@@ -197,7 +194,7 @@ a.btn {     /* X button for modal */
 
 @media screen and (max-width: 800px) {
     .aboutSection {
-      flex-wrap: wrap;
+      flex-direction: column;
     }
     .projectSection {
       flex-wrap: wrap;
@@ -212,4 +209,6 @@ a.btn {     /* X button for modal */
     .popupOverlay.active {
         visibility: hidden;
     }
+  
+    
  }
