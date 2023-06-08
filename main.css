@@ -1,6 +1,7 @@
 html {
     font-family: 'Roboto', sans-serif;
     background-color: #e0e0db;
+    font-weight: 400;
 }
 
 a {
@@ -11,7 +12,7 @@ a {
 body {
     display: block;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     height: 0;
 }
 
@@ -19,29 +20,61 @@ header {
     position: fixed;
     width: 100%;
     height: 50px;
-    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 0;
     background-color: #e0e0db;
+    max-width: 1200px;
 }
 
 main {
-    margin: 0 100px;
-    padding: 60px 0;
+    margin: auto;
+    padding: 80px 0;
+    max-width: 800px;
+}
+
+#about {
+    padding-bottom: 25px;
 }
 
 .intro {
     max-width: 80%;
-    margin: 50px auto;
 }
+
+.intro#introSection {
+    max-width: 80%;
+    margin: 50px auto; 
+}
+
+div.intro#aboutMe{
+    display: inline-block;
+    max-width: 40%;
+    min-width: 300px; 
+    align-items: center;
+} 
 
 #recentWork {
     padding: 0 0 10px 0;
     text-align: center;
 }
 
-section {
+.projectSection {
     display: flex;
     justify-content: center;
+}
+
+.aboutSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutSpacer {
+    margin: 94px;
+}
+
+.projectPagesSpacer {
+    margin: 130px;
 }
 
 .projectPhotos {
@@ -52,6 +85,18 @@ section {
 
 p {
     text-align: center;
+}
+
+#leftDiv {
+    margin-bottom: 50px;
+    max-width: 70%;
+    max-height: 60%;
+}
+
+#rightDiv {
+    max-width: 70%;
+    max-height: 60%;
+    margin: 0 1px;
 }
 
 li {
@@ -82,12 +127,18 @@ img {
 }
 
 footer {
-    position: relative;
+    display: flex;
+    justify-content: center;
     bottom: 0;
     color: white;
     background-color: #2E2E2E;
     padding: 10px 20px 20px;
-    width: 100%;
+    max-width: 100%;
+}
+
+#footerContent {
+    margin: auto;
+    text-align: left;
 }
 
 .navLink {
@@ -102,14 +153,18 @@ a.btn {     /* X button for modal */
 }
 
 #resume {
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 320px;
+    max-width: 250px;
 }
 
 #imgContainer {
-    display: inline-block;
-    justify-content: center;
-    padding: 0 0 20px 0;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 60px;
+    padding-top: 60px;
+
 }
 
 .popupOverlay {
@@ -131,8 +186,16 @@ a.btn {     /* X button for modal */
     visibility: visible;
 }
 
-@media screen and (max-width: 700px) {
-    section {
+@media screen and (max-width: 800px) {
+    .aboutSection {
       flex-wrap: wrap;
     }
-  }
+    .projectSection {
+      flex-wrap: wrap;
+    }
+    #imgContainer {
+        margin: 0;
+    } 
+
+ }
+
