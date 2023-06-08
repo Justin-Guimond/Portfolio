@@ -1,25 +1,22 @@
 html {
     font-family: 'Roboto', sans-serif;
     background-color: #e0e0db;
-    font-weight: 400;
 }
 
 a {
     color: #2E2E2E;
-    text-decoration: none; /*removes underlining of links*/
+    text-decoration: none; 
 }
 
 body {
-    display: block;
-    padding: 0;
+    padding: 0px; /*how to add padding wihtout it affecting the footer?*/
     margin: 0 auto;
-    height: 0;
 }
 
 header {
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 60px;
     left: 50%;
     transform: translateX(-50%);
     padding: 0;
@@ -33,8 +30,23 @@ main {
     max-width: 800px;
 }
 
-#about {
-    padding-bottom: 25px;
+li {
+    display: inline; /*puts links beside eachother*/
+    float: right;
+    padding: 0 40px 0 0;
+}
+
+#home {
+    float: left;
+    font-size: 30px;
+}
+
+#hi{
+    font-size: 20px;
+}
+
+#hello {
+    color: blue;
 }
 
 .intro {
@@ -46,13 +58,6 @@ main {
     margin: 50px auto; 
 }
 
-div.intro#aboutMe{
-    display: inline-block;
-    max-width: 40%;
-    min-width: 300px; 
-    align-items: center;
-} 
-
 #recentWork {
     padding: 0 0 10px 0;
     text-align: center;
@@ -61,6 +66,41 @@ div.intro#aboutMe{
 .projectSection {
     display: flex;
     justify-content: center;
+}
+
+.projectPhotos {
+    width: 90%;
+    height: auto;
+    margin: 5%;
+}
+
+#googlePhoto {
+    margin-bottom: 50px;
+    max-width: 70%;
+    max-height: 60%;
+}
+
+#facebookPhoto {
+    max-width: 70%;
+    max-height: 60%;
+}
+
+.projectNames {
+    text-align: center;
+}
+
+.projectPagesSpacer {
+    margin: 130px;
+}
+
+.intro#aboutMe {
+    max-width: 40%;
+    min-width: 300px; 
+    align-items: center;
+} 
+
+#about {
+    padding-bottom: 25px;
 }
 
 .aboutSection {
@@ -73,57 +113,52 @@ div.intro#aboutMe{
     margin: 94px;
 }
 
-.projectPagesSpacer {
-    margin: 130px;
-}
-
-.projectPhotos {
-    width: 90%;
-    height: auto;
-    margin: 5%;
-}
-
-p {
-    text-align: center;
-}
-
-#leftDiv {
-    margin-bottom: 50px;
-    max-width: 70%;
-    max-height: 60%;
-}
-
-#rightDiv {
-    max-width: 70%;
-    max-height: 60%;
-    margin: 0 1px;
-}
-
-li {
-    display: inline; /*puts links beside eachother*/
-    float: right;
-    padding: 0 40px 0 0;
-}
-
-#home {
-    float: left;
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-}
-
-#hi{
-    font-size: 20px;
-}
-
-#hello {
-    color: blue;
-}
-
 img {
-    height: 60%;
-    width: 50%;
     border-radius: 10px;
+}
+
+#overlayXbtn {
+    display: flex;
+    justify-content: center;     
+    padding: 0 0 0 420px;
+    color: white;
+}
+
+#imgContainer {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 60px;
+    padding-top: 60px;
+}
+
+#resume {
+    width: 100%;
+    height: 320px;
+    max-width: 250px;
+}
+
+#resumeOverlay { /*why doesnt the resume stretch (dont want it to just curious*/
+    width: 400px;
+    height: 550px;
+}
+
+.popupOverlay {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0,0,0, .8);
+    position: absolute; /*read more about this*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.popupOverlay.active {
+    visibility: visible;
 }
 
 footer {
@@ -145,52 +180,6 @@ footer {
     color: white;
 }
 
-a.btn {     /* X button for modal */
-    display: flex;
-    justify-content: center;     
-    padding: 0 0 0 420px;
-    color: white;
-}
-
-#resume {
-    width: 100%;
-    height: 320px;
-    max-width: 250px;
-}
-
-#resumeOverlay {
-    width: 400px;
-    height: 550px;
-    max-width: 60%;
-    max-height: 80%;
-}
-
-#imgContainer {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: 60px;
-    padding-top: 60px;
-}
-
-.popupOverlay {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0,0,0, .8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    z-index: 2;
-}
-
-.popupOverlay.active {
-    visibility: visible;
-}
 
 @media screen and (max-width: 800px) {
     .aboutSection {
@@ -209,6 +198,6 @@ a.btn {     /* X button for modal */
     .popupOverlay.active {
         visibility: hidden;
     }
-  
+  /* how to remove cursor pointer at the specified pixel width above - tried wasnt working */
     
  }
