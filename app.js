@@ -14,13 +14,13 @@ $('.close, .popupOverlay').click(function(){
     $('.popupOverlay').removeClass('active');
 })
 
-const $resume = $('img').hover(function (){  
-    $(this).css({'cursor':'pointer'})
+const $resume = $('img').hover(function (){
+    if (window.innerWidth >= 691)  
+        $(this).css({'cursor':'pointer'})
     
 }, function() {
     $(this).css({'cursor':'default'})
 
 });
-
 
 });
