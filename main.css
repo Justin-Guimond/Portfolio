@@ -9,6 +9,7 @@ a {
 }
 
 body {
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     padding: 0px; 
@@ -113,6 +114,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* padding-top: 10%; */
 }
 
 img {
@@ -163,9 +165,9 @@ img {
 }
 
 footer {
-    position: fixed;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
     bottom: 0;
     left: 0;
     right: 0;
