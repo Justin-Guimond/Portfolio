@@ -9,8 +9,11 @@ a {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     padding: 0px; 
     margin: 0 auto;
+    min-height: 100%;
 }
 
 header {
@@ -25,6 +28,9 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     margin: auto;
     padding: 80px 0;
     max-width: 800px;
@@ -93,10 +99,6 @@ li {
     padding: 0 50px;
 }
 
-.projectPagesSpacer {
-    margin: 60px;
-}
-
 .intro#aboutMe {
     max-width: 40%;
     min-width: 300px; 
@@ -111,10 +113,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#aboutSpacer {
-    margin: 94px;
 }
 
 img {
@@ -165,9 +163,12 @@ img {
 }
 
 footer {
+    position: fixed;
     display: flex;
     justify-content: center;
     bottom: 0;
+    left: 0;
+    right: 0;
     color: white;
     background-color: #2E2E2E;
     padding: 10px 20px 20px;
@@ -199,12 +200,6 @@ footer {
     }
     #resume:hover {
         cursor: default;
-    }
-    #aboutSpacer {
-        margin: 0;
-    }
-    .projectPagesSpacer {
-        margin: 0;
     }
 
  }
