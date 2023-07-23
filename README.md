@@ -2,7 +2,7 @@
 
 ## Summary
 
-#### This project is a portfolio website built to practice html, css, and JS/jQuery. The site contains recent work, an about section, and a contact section. The portfolio was built based off an existing portfolio I had made in the past using Squarespace. 
+#### This project is a portfolio web app built to practice html, css, and JS/jQuery. The site contains recent work, an about section, and a contact section. The portfolio was built based off an existing portfolio I had made in the past using Squarespace. 
 
 ## Before focussing on CSS
 
