@@ -18,23 +18,5 @@ const $a = $('a').hover(function (){
     }, function() {
         $(this).css({'text-decoration':'none'})
     });
-// Resume photo modal
-$('.open').click(function(){
-    $('.popupOverlay').addClass('active');
-});
-$('.close, .popupOverlay').click(function(){
-    $('.popupOverlay').removeClass('active');
-})
-// Removes hover when modal is disabled on small screen
-const $resume = $('img').hover(function (){
-    if (window.innerWidth >= 691)  
-        $(this).css({'cursor':'pointer'})
-    
-    }, function() {
-        $(this).css({'cursor':'default'})
-
-    });
-
-
 
 });
