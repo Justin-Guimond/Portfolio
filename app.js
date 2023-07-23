@@ -15,9 +15,9 @@ function adjustMainHeight() {
 const $a = $('a').hover(function (){  
     $(this).css({'text-decoration':'underline'})
     
-}, function() {
-    $(this).css({'text-decoration':'none'})
-});
+    }, function() {
+        $(this).css({'text-decoration':'none'})
+    });
 // Resume photo modal
 $('.open').click(function(){
     $('.popupOverlay').addClass('active');
@@ -30,10 +30,10 @@ const $resume = $('img').hover(function (){
     if (window.innerWidth >= 691)  
         $(this).css({'cursor':'pointer'})
     
-}, function() {
-    $(this).css({'cursor':'default'})
+    }, function() {
+        $(this).css({'cursor':'default'})
 
-});
+    });
 
 
 
