@@ -100,6 +100,10 @@ li {
     padding: 0 50px;
 }
 
+.projectDescriptions {
+    margin: 0 5%;
+}
+
 .intro#aboutMe {
     max-width: 40%;
     min-width: 300px; 
@@ -179,7 +183,7 @@ footer {
 
 #footerContent {
     margin: auto;
-    text-align: left;
+    text-align: center;
 }
 
 .navLink {
