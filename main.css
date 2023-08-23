@@ -36,7 +36,7 @@ main {
     flex: 1;
     margin: auto;
     padding: 80px 0;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 #home {
@@ -73,21 +73,10 @@ main {
 }
 
 .projectPhotos {
-    width: 90% !important;
-    height: auto !important;
-    margin: 5% !important;
+    width: 90%;
+    height: auto;
+    margin: 5%;
 }
-
-/* #showtimePhoto {
-    margin-bottom: 50px;
-    max-width: 70%;
-    max-height: 60%;
-} */
-
-/* #elevatorPhoto {
-    max-width: 70%;
-    max-height: 60%;
-} */
 
 .projectNames {
     margin: 0 5% 2%;
@@ -106,7 +95,6 @@ main {
     background-color: #F1A638 !important;
     border-color: #2e2e2e !important;
     color: #344734 !important;
-
 }
 
 .intro#aboutMe {
@@ -230,7 +218,7 @@ footer {
     animation: scribble 3s linear forwards;
     transform-origin: bottom left;
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 900px) {
     .aboutSection {
       flex-direction: column;
     }
@@ -240,4 +228,7 @@ footer {
     #imgContainer {
         margin: 0;
     } 
+    .projectDescriptions {
+        margin-bottom: 40px;
+    }
  }
