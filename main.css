@@ -39,12 +39,6 @@ main {
     max-width: 800px;
 }
 
-/* li {
-    display: inline;
-    float: right;
-    padding: 0 40px 0 0;
-} */
-
 #home {
     float: left;
     font-size: 30px;
@@ -79,21 +73,21 @@ main {
 }
 
 .projectPhotos {
-    width: 90%;
-    height: auto;
-    margin: 5%;
+    width: 90% !important;
+    height: auto !important;
+    margin: 5% !important;
 }
 
-#showtimePhoto {
+/* #showtimePhoto {
     margin-bottom: 50px;
     max-width: 70%;
     max-height: 60%;
-}
+} */
 
-#elevatorPhoto {
+/* #elevatorPhoto {
     max-width: 70%;
     max-height: 60%;
-}
+} */
 
 .projectNames {
     margin: 0 5% 2%;
@@ -112,7 +106,7 @@ main {
     background-color: #F1A638 !important;
     border-color: #2e2e2e !important;
     color: #344734 !important;
-    
+
 }
 
 .intro#aboutMe {
@@ -247,9 +241,3 @@ footer {
         margin: 0;
     } 
  }
-
- /* @media screen and (max-width: 800px) {
-    .mountain-container {
-        display: none;
-    }
- } */
