@@ -105,7 +105,7 @@ main {
 } 
 
 .skillsFactsSection {
-    padding: 0 20px;
+    padding: 0 16px;
 }
 
 #funFactsHeader {
@@ -248,5 +248,8 @@ footer {
     } 
     .projectDescriptions {
         margin-bottom: 40px;
+    }
+    .skillsFactsSection {
+        padding: 0 46px;
     }
  }
