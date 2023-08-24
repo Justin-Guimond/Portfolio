@@ -61,7 +61,7 @@ main {
     margin: 50px auto; 
 }
 
-#recentWork {
+.headers {
     padding: 0 0 10px 0;
     text-align: center;
     color: #F1A638;
@@ -70,6 +70,7 @@ main {
 .projectSection {
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 .projectPhotos {
