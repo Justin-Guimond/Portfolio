@@ -104,6 +104,22 @@ main {
     align-items: center;
 } 
 
+.skillsFactsSection {
+    padding: 0 20px;
+}
+
+#funFactsHeader {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#funFactsSection {
+    background-color: #F1A638;
+    border-radius: 10px;
+    padding: 10px 0;
+    color: #344734;
+}
+
 #about {
     padding-bottom: 25px;
 }
@@ -225,6 +241,7 @@ footer {
     }
     .projectSection {
       flex-wrap: wrap;
+      margin-bottom: 30px;
     }
     #imgContainer {
         margin: 0;
