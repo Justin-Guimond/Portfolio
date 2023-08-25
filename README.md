@@ -12,5 +12,5 @@
 - Make the mountains above the footer look more realistic and add a sun rising above them
 
 ## Photos
-!(./images/portfolio-top.png)
-!(./images/portfolio-bottom.png)
+![Portfolio](./images/portfolio-top.png)
+![Portfolio](./images/portfolio-bottom.png)
