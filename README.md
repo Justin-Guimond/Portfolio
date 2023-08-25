@@ -4,7 +4,9 @@
 
 #### My portfolio contains recent work, an about section, skills, fun facts, and a contact section.
 
-#### Live link: https://justinguimond.netlify.app/
+#### Live Link: https://justinguimond.netlify.app/
+
+#### Technologies Used: Javascript, html, css/bootstrap
 
 ## Future Improvements
 
