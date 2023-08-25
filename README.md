@@ -4,7 +4,7 @@
 
 #### My portfolio contains recent work, an about section, skills, fun facts, and a contact section.
 
-## Live link: https://justinguimond.netlify.app/
+#### Live link: https://justinguimond.netlify.app/
 
 ## Future Improvements
 
@@ -12,5 +12,5 @@
 - Make the mountains above the footer look more realistic and add a sun rising above them
 
 ## Photos
-(images/portfolio-top.png)
-(images/portfolio-bottom.png)
+!(images/portfolio-top.png)
+!(images/portfolio-bottom.png)
